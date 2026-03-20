@@ -76,7 +76,14 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.login-form button:hover {
-  background-color: #3f525e;
-  transform: scale(1.05);
+
+#submitButton:disabled {
+  background-color: grey;
+  border: 1px solid grey;
+  cursor: not-allowed;
+}
+#errorMessage {
+  color: red;
+  margin-top: 10px;
+
 }
