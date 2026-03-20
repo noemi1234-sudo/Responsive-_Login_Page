@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Learn Flexbox</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <div class="header">header</div>
 
   <div class="content">
@@ -16,23 +16,25 @@
 
       <h2>Login</h2>
 
-      <form class="login-form">
-        <input type="text" placeholder="Vorname">
-        <input type="text" placeholder="Nachname">
-        <button type="submit">Absenden</button>
+      <form class="login-form" id="loginForm">
+        <input type="text" id="firstName" placeholder="Vorname">
+        <input type="text" id="lastName" placeholder="Nachname">
+        <button type="submit" id="submitButton">Absenden</button>
       </form>
 
+      <!-- (3) Fehlermeldungen -->
+      <div id="errorMessage"></div>
+
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a
-        type specimen book.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       </p>
 
     </div>
   </div>
 
   <div class="footer">footer</div>
-</body>
 
+  <script src="script.js"></script>
+
+</body>
 </html>
